@@ -70,7 +70,7 @@ That installs selected skills into `./tmp-playground/.codex/skills`.
 ### Install agents into Codex
 
 ```bash
-./installer.sh reviewer architect worker_mini
+./installer.sh reviewer worker_mini
 ```
 
 Or copy everything:
@@ -80,6 +80,13 @@ Or copy everything:
 ```
 
 Agents are copied into `~/.codex/agents`.
+
+Unique agent names keep their plain filename. Duplicate basenames are installed with stable namespaced IDs so nothing gets overwritten. Examples:
+
+- `architect.toml` becomes `root__architect.toml`
+- `architecture-orchestration/architect.toml` becomes `architecture-orchestration__architect.toml`
+
+If you request an ambiguous short name such as `architect`, the installer stops and tells you which qualified selector to use.
 
 ### Install semantic code search for Codex
 
@@ -142,6 +149,13 @@ node bin/codexskills.js --help
 ```
 
 There is no formal test suite yet. When changing the installer or packaged skills, use a temporary project directory and confirm the expected files land in `.codex/skills` or `~/.codex/agents`.
+
+For agent installer changes, use a disposable home directory and confirm the full inventory is preserved:
+
+```bash
+HOME=/tmp/codex-field-kit-smoke ./installer.sh all
+find /tmp/codex-field-kit-smoke/.codex/agents -type f -name '*.toml' | wc -l
+```
 
 ## Archive
 
