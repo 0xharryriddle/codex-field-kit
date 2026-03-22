@@ -8,6 +8,7 @@ FORCE=0
 TARGET_SCOPE="project"
 PROJECT_PATH="$(pwd)"
 PASS_THROUGH_ARGS=()
+HAS_YES=0
 
 usage() {
   cat <<'EOF'
@@ -33,6 +34,7 @@ This wrapper delegates to:
 Behavior:
   - Existing installed skills are skipped by default.
   - Use --force to reinstall the whole group.
+  - This wrapper runs non-interactively by default.
 EOF
 }
 
@@ -93,6 +95,11 @@ while [ "$#" -gt 0 ]; do
       FORCE=1
       shift
       ;;
+    -y|--yes)
+      HAS_YES=1
+      PASS_THROUGH_ARGS+=("$1")
+      shift
+      ;;
     *)
       PASS_THROUGH_ARGS+=("$1")
       shift
@@ -100,9 +107,13 @@ while [ "$#" -gt 0 ]; do
   esac
 done
 
-TARGET_ROOT="$PROJECT_PATH/.codex/skills"
+TARGET_ROOT="$PROJECT_PATH/.agents/skills"
 if [ "$TARGET_SCOPE" = "user" ]; then
-  TARGET_ROOT="$HOME/.codex/skills"
+  TARGET_ROOT="$HOME/.agents/skills"
+fi
+
+if [ "$HAS_YES" -eq 0 ]; then
+  PASS_THROUGH_ARGS+=("-y")
 fi
 
 mapfile -t GROUP_SKILLS < <(find "$GROUP_PATH/skills" -mindepth 1 -maxdepth 1 -type d -exec basename {} \; | sort)
@@ -142,8 +153,14 @@ if [ "$FORCE" -eq 0 ]; then
   fi
 
   echo "Installing $missing_count missing skill(s) from '$GROUP' into $TARGET_ROOT"
+  if [ "$TARGET_SCOPE" = "project" ]; then
+    cd "$PROJECT_PATH"
+  fi
   exec npx skills add "$tmp_group" "${PASS_THROUGH_ARGS[@]}"
 fi
 
 echo "Reinstalling full group '$GROUP'"
+if [ "$TARGET_SCOPE" = "project" ]; then
+  cd "$PROJECT_PATH"
+fi
 exec npx skills add "$GROUP_PATH" "${PASS_THROUGH_ARGS[@]}"

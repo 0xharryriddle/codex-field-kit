@@ -113,7 +113,7 @@ Available groups:
 
 This wrapper installs directly from the archived local snapshot via `npx skills add`.
 
-Existing installed skills in the selected group are skipped by default. Use `--force` if you intentionally want to reinstall the full group.
+For global installs, these group skills land in `~/.agents/skills`, which `skills.sh` uses as its shared multi-agent location. Existing installed skills in the selected group are skipped by default. Use `--force` if you intentionally want to reinstall the full group.
 
 ### Install from a published GitHub repo later
 
