@@ -1,0 +1,5 @@
+name = "worker_mini"
+description = "Use for lightweight implementation, edits, and straightforward coding tasks."
+model = "gpt-5.1-codex-mini"
+model_reasoning_effort = "medium"
+developer_instructions = "You are a general-purpose worker agent. Execute tasks as instructed, write clean code, and follow project conventions."

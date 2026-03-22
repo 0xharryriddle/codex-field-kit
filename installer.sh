@@ -1,44 +1,42 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SOURCE_DIR="$ROOT_DIR/agents"
 DEST_DIR="$HOME/.codex/agents"
 
-# Show usage if no arguments are provided
 if [ "$#" -eq 0 ]; then
-    echo "Usage: ./installer.sh [agent_name1] [agent_name2] ..."
-    echo "Example: ./installer.sh backend-developer python-pro"
-    echo "To copy everything: ./installer.sh all"
-    exit 1
+  echo "Usage: ./installer.sh [agent_name1] [agent_name2] ..."
+  echo "Example: ./installer.sh reviewer architect worker_mini"
+  echo "To copy everything: ./installer.sh all"
+  exit 1
 fi
 
-# Ensure destination exists
 mkdir -p "$DEST_DIR"
-echo "📂 Destination ready: $DEST_DIR"
+echo "Destination ready: $DEST_DIR"
 
-# Handle the "all" case
 if [ "$1" = "all" ]; then
-    echo "Copying all agents..."
-    # Copy all .toml files from subdirectories, ignoring READMEs
-    cp categories/*/*.toml "$DEST_DIR/" 2>/dev/null
-    echo "🎉 All agents copied successfully!"
-    exit 0
+  echo "Copying all agents from $SOURCE_DIR"
+  find "$SOURCE_DIR" -type f -name '*.toml' -exec cp {} "$DEST_DIR/" \;
+  echo "All agents copied."
+  exit 0
 fi
 
-# Loop through all provided arguments
 for agent in "$@"; do
-    # Automatically add .toml if you forgot to type it
-    if [[ "$agent" != *.toml ]]; then
-        agent="${agent}.toml"
-    fi
+  if [[ "$agent" != *.toml ]]; then
+    agent="${agent}.toml"
+  fi
 
-    # Search for the file inside the categories folder
-    found_file=$(find categories -type f -name "$agent" | head -n 1)
+  found_file="$(find "$SOURCE_DIR" -type f -name "$agent" | head -n 1)"
 
-    if [ -z "$found_file" ]; then
-        echo "❌ Not found: $agent"
-    else
-        cp "$found_file" "$DEST_DIR/"
-        echo "✅ Copied: $agent"
-    fi
+  if [ -z "$found_file" ]; then
+    echo "Not found: $agent"
+    continue
+  fi
+
+  cp "$found_file" "$DEST_DIR/"
+  echo "Copied: $(basename "$found_file")"
 done
 
-echo "🚀 Finished installing agents!"
+echo "Finished."
