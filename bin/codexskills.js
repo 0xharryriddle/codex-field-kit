@@ -16,6 +16,7 @@ Usage:
 Examples:
   npx codexskills --user ./skills
   npx codexskills --project . ./my-repo
+  npx codexskills --user ./skills --force
   npx codexskills --user am-will/codex-skills/skills/openai-docs-skill
   npx codexskills --user am-will/codex-skills/skills
   npx codexskills --project am-will/codex-skills/skills ./my-repo
@@ -26,6 +27,7 @@ Notes:
   - You can also pass a local directory such as "." or "./skills".
   - If the source directory contains a top-level "skills/" directory, the installer uses that by default.
   - "--project" installs into <projectPath>/.codex/skills (defaults to CWD).
+  - Existing installed skills are skipped by default. Use "--force" to overwrite them.
   - When multiple skills are found, you can interactively select which to install.
 `);
   process.exit(exitCode);
@@ -39,6 +41,7 @@ function parseArgs(argv) {
   let spec = null;
   let projectPath = null;
   let installAll = false;
+  let force = false;
 
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
@@ -56,6 +59,8 @@ function parseArgs(argv) {
       }
     } else if (arg === '--all') {
       installAll = true;
+    } else if (arg === '--force') {
+      force = true;
     } else if (arg === '-h' || arg === '--help') {
       usage(0);
     } else {
@@ -72,7 +77,7 @@ function parseArgs(argv) {
     usage(1);
   }
 
-  return { scope, spec, projectPath, installAll };
+  return { scope, spec, projectPath, installAll, force };
 }
 
 function splitRepoSpec(spec) {
@@ -292,7 +297,7 @@ async function promptSelectSkills(skillDirs) {
   return picked;
 }
 
-async function installSkills({ scope, spec, projectPath, installAll }) {
+async function installSkills({ scope, spec, projectPath, installAll, force }) {
   printBanner();
 
   const localSource = resolveLocalSpec(spec);
@@ -325,13 +330,18 @@ async function installSkills({ scope, spec, projectPath, installAll }) {
 
     const srcStat = await fsp.stat(sourcePath);
     const installed = [];
+    const skipped = [];
 
     if (srcStat.isDirectory()) {
       const skillFile = path.join(sourcePath, 'SKILL.md');
       if (await pathExists(skillFile)) {
         const dest = path.join(targetRoot, path.basename(sourcePath));
-        await copyDir(sourcePath, dest);
-        installed.push(dest);
+        if (!force && await pathExists(dest)) {
+          skipped.push(dest);
+        } else {
+          await copyDir(sourcePath, dest);
+          installed.push(dest);
+        }
       } else {
         const skillDirs = await listSkillDirs(sourcePath);
         if (skillDirs.length === 0) {
@@ -340,6 +350,10 @@ async function installSkills({ scope, spec, projectPath, installAll }) {
         const picked = installAll ? skillDirs : await promptSelectSkills(skillDirs);
         for (const skillDir of picked) {
           const dest = path.join(targetRoot, path.basename(skillDir));
+          if (!force && await pathExists(dest)) {
+            skipped.push(dest);
+            continue;
+          }
           await copyDir(skillDir, dest);
           installed.push(dest);
         }
@@ -348,9 +362,22 @@ async function installSkills({ scope, spec, projectPath, installAll }) {
       throw new Error('Source path is not a directory.');
     }
 
-    console.log('Installation complete:');
-    for (const dest of installed) {
-      console.log(`- ${dest}`);
+    if (installed.length > 0) {
+      console.log('Installed:');
+      for (const dest of installed) {
+        console.log(`- ${dest}`);
+      }
+    }
+
+    if (skipped.length > 0) {
+      console.log('Skipped existing:');
+      for (const dest of skipped) {
+        console.log(`- ${dest}`);
+      }
+    }
+
+    if (installed.length === 0 && skipped.length === 0) {
+      console.log('No skills were installed.');
     }
   } finally {
     if (tmpBase) {

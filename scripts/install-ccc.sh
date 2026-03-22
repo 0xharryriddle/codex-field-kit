@@ -8,6 +8,7 @@ PROJECT_PATH=""
 INSTALL_CLI=1
 INSTALL_SKILL=1
 TOOL="auto"
+FORCE=0
 
 usage() {
   cat <<'EOF'
@@ -20,6 +21,7 @@ Options:
   --project <path> Install the ccc skill into <path>/.codex/skills
   --skill-only     Install only the local ccc skill
   --cli-only       Install only the cocoindex-code CLI
+  --force          Reinstall the local ccc skill even if it already exists
   --pipx           Prefer pipx for CLI installation
   --uv             Prefer uv for CLI installation
   -h, --help       Show this help
@@ -47,6 +49,10 @@ while [ "$#" -gt 0 ]; do
       ;;
     --cli-only)
       INSTALL_SKILL=0
+      shift
+      ;;
+    --force)
+      FORCE=1
       shift
       ;;
     --pipx)
@@ -132,9 +138,17 @@ install_skill() {
   fi
 
   if [ "$SCOPE" = "user" ]; then
-    node "$ROOT_DIR/bin/codexskills.js" --user "$ROOT_DIR/skills/ccc"
+    if [ "$FORCE" -eq 1 ]; then
+      node "$ROOT_DIR/bin/codexskills.js" --user "$ROOT_DIR/skills/ccc" --force
+    else
+      node "$ROOT_DIR/bin/codexskills.js" --user "$ROOT_DIR/skills/ccc"
+    fi
   else
-    node "$ROOT_DIR/bin/codexskills.js" --project "$ROOT_DIR/skills/ccc" "$PROJECT_PATH"
+    if [ "$FORCE" -eq 1 ]; then
+      node "$ROOT_DIR/bin/codexskills.js" --project "$ROOT_DIR/skills/ccc" "$PROJECT_PATH" --force
+    else
+      node "$ROOT_DIR/bin/codexskills.js" --project "$ROOT_DIR/skills/ccc" "$PROJECT_PATH"
+    fi
   fi
 }
 

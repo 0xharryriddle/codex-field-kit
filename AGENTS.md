@@ -18,6 +18,7 @@ When making changes, treat the root toolkit as the product. Treat `archive/` as 
 - `agents/**/*.toml` contains Codex agent definitions grouped by domain.
 - `bin/codexskills.js` installs skills into project or user scope.
 - `scripts/install-ccc.sh` bootstraps the CocoIndex Code CLI plus the local `ccc` skill.
+- `scripts/install-chase-skill-group.sh` installs a Chasebuild skill group from the archived local snapshot using `npx skills add`.
 - `installer.sh` installs agent TOML files into `~/.codex/agents`.
 - `archive/legacy-subagents/` preserves the previous category-based repo layout.
 - `archive/upstream/` preserves imported upstream snapshots.
@@ -30,6 +31,9 @@ When making changes, treat the root toolkit as the product. Treat `archive/` as 
 - Keep agent names and roles narrow. Avoid generic personas that overlap heavily with existing agents.
 - If you add or remove a skill or agent, update `README.md`.
 - For semantic repository exploration, prefer `skills/ccc/` over ad hoc grep-only workflows when the task is concept-based or spans unfamiliar code paths.
+- Use `archive/upstream/chasebuild-agent-skills/` as a study reference for skill writing patterns, especially context-engineering guardrails, Git workflow discipline, and deep Rust specialization.
+- Installer scripts in this repo should be idempotent by default: skip existing skills unless the user explicitly requests a reinstall.
+- When importing or adapting upstream material, add or update an entry in `THIRD_PARTY_NOTICES.md` and keep the source repository URL explicit.
 
 ## Style
 
@@ -42,6 +46,7 @@ When making changes, treat the root toolkit as the product. Treat `archive/` as 
 
 - For installer changes, run `node bin/codexskills.js --help`.
 - For `ccc` bootstrap changes, run `bash -n scripts/install-ccc.sh`.
+- For Chasebuild installer wrapper changes, run `bash -n scripts/install-chase-skill-group.sh`.
 - For agent installer changes, smoke test `./installer.sh <agent-name>` against a disposable environment when practical.
 - If you touch a skill with scripts or required environment variables, verify the instructions still match the files in that skill directory.
 
