@@ -4,7 +4,7 @@ const fs = require('fs');
 const fsp = fs.promises;
 const path = require('path');
 const os = require('os');
-const { execSync } = require('child_process');
+const { spawnSync } = require('child_process');
 
 function usage(exitCode = 1) {
   console.log(`codexskills - install Codex skills into user or project scope
@@ -81,25 +81,46 @@ function parseArgs(argv) {
 }
 
 function splitRepoSpec(spec) {
-  const cleaned = spec.replace(/^https?:\/\//, '').replace(/\.git$/, '');
-  let parts = cleaned.split('/').filter(Boolean);
+  const trimmed = spec.trim();
+  let repoPath;
 
-  // If the input is a full GitHub URL, drop the domain
-  if (parts[0] && parts[0].includes('.')) {
-    parts = parts.slice(1);
+  if (!trimmed) {
+    throw new Error('Invalid repo spec. Use owner/repo[/path].');
   }
+
+  if (/^https?:\/\//.test(trimmed)) {
+    const url = new URL(trimmed);
+    if (!['github.com', 'www.github.com'].includes(url.hostname)) {
+      throw new Error('Only GitHub repository URLs are supported.');
+    }
+    repoPath = url.pathname.replace(/^\/+/, '').replace(/\.git$/, '');
+  } else {
+    repoPath = trimmed.replace(/^github\.com\//, '').replace(/\.git$/, '');
+  }
+
+  const parts = repoPath.split('/').filter(Boolean);
 
   const owner = parts[0];
   const repo = parts[1];
-  const subPath = parts.slice(2).join('/');
+  const subParts = parts.slice(2);
 
   if (!owner || !repo) {
     throw new Error('Invalid repo spec. Use owner/repo[/path].');
   }
 
+  if (!/^[A-Za-z0-9_.-]+$/.test(owner) || !/^[A-Za-z0-9_.-]+$/.test(repo)) {
+    throw new Error('Invalid GitHub repo spec. Owner and repo must use safe GitHub path characters.');
+  }
+
+  for (const segment of subParts) {
+    if (!segment || segment === '.' || segment === '..') {
+      throw new Error('Invalid repo subpath. Relative path traversal is not allowed.');
+    }
+  }
+
   return {
     repoUrl: `https://github.com/${owner}/${repo}.git`,
-    subPath
+    subPath: subParts.join('/')
   };
 }
 
@@ -113,11 +134,32 @@ function resolveLocalSpec(spec) {
 }
 
 function ensureCmd(cmd) {
-  try {
-    execSync(`command -v ${cmd}`, { stdio: 'ignore' });
-  } catch {
+  if (!hasCommand(cmd)) {
     throw new Error(`Missing required command: ${cmd}`);
   }
+}
+
+function hasCommand(cmd) {
+  const result = spawnSync('which', [cmd], { stdio: 'ignore' });
+  return result.status === 0;
+}
+
+function runCommand(cmd, args, options = {}) {
+  const result = spawnSync(cmd, args, {
+    encoding: 'utf8',
+    ...options
+  });
+
+  if (result.error) {
+    throw result.error;
+  }
+
+  if (result.status !== 0) {
+    const output = `${result.stderr || ''}${result.stdout || ''}`.trim();
+    throw new Error(output || `${cmd} exited with status ${result.status}`);
+  }
+
+  return result;
 }
 
 async function pathExists(p) {
@@ -130,18 +172,13 @@ async function pathExists(p) {
 }
 
 async function hasTrashCommand() {
-  try {
-    execSync('command -v trash', { stdio: 'ignore' });
-    return true;
-  } catch {
-    return false;
-  }
+  return hasCommand('trash');
 }
 
 async function cleanupDir(dir) {
   if (await hasTrashCommand()) {
     try {
-      execSync(`trash "${dir}"`, { stdio: 'ignore' });
+      runCommand('trash', [dir], { stdio: 'ignore' });
       return;
     } catch {
       // Fall through to fs.rm
@@ -312,7 +349,7 @@ async function installSkills({ scope, spec, projectPath, installAll, force }) {
       ensureCmd('git');
       const { repoUrl, subPath } = splitRepoSpec(spec);
       tmpBase = await fsp.mkdtemp(path.join(os.tmpdir(), 'codexskills-'));
-      execSync(`git clone --depth 1 ${repoUrl} ${tmpBase}`, { stdio: 'inherit' });
+      runCommand('git', ['clone', '--depth', '1', repoUrl, tmpBase], { stdio: 'inherit' });
 
       sourcePath = subPath ? path.join(tmpBase, subPath) : tmpBase;
       sourcePath = await normalizeSourcePath(sourcePath);

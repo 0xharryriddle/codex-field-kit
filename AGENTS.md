@@ -33,6 +33,8 @@ When making changes, treat the root toolkit as the product. Treat `archive/` as 
 - For semantic repository exploration, prefer `skills/ccc/` over ad hoc grep-only workflows when the task is concept-based or spans unfamiliar code paths.
 - Use `archive/upstream/chasebuild-agent-skills/` as a study reference for skill writing patterns, especially context-engineering guardrails, Git workflow discipline, and deep Rust specialization.
 - Installer scripts in this repo should be idempotent by default: skip existing skills unless the user explicitly requests a reinstall.
+- Agent installer behavior must preserve the full repository inventory. If duplicate basenames exist under `agents/`, install them with deterministic namespaced IDs instead of silently overwriting files.
+- When documenting or requesting one of those duplicate-name agents, prefer a qualified selector such as `architecture-orchestration/architect` or the installed ID `architecture-orchestration__architect`.
 - When importing or adapting upstream material, add or update an entry in `THIRD_PARTY_NOTICES.md` and keep the source repository URL explicit.
 
 ## Style
@@ -47,7 +49,7 @@ When making changes, treat the root toolkit as the product. Treat `archive/` as 
 - For installer changes, run `node bin/codexskills.js --help`.
 - For `ccc` bootstrap changes, run `bash -n scripts/install-ccc.sh`.
 - For Chasebuild installer wrapper changes, run `bash -n scripts/install-chase-skill-group.sh`.
-- For agent installer changes, smoke test `./installer.sh <agent-name>` against a disposable environment when practical.
+- For agent installer changes, smoke test both `./installer.sh <agent-name>` and `HOME=/tmp/codex-field-kit-smoke ./installer.sh all` when practical.
 - If you touch a skill with scripts or required environment variables, verify the instructions still match the files in that skill directory.
 
 ## Archive Policy
