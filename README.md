@@ -1,8 +1,10 @@
 # Codex Field Kit
 
-This repository is my personal Codex toolkit and handbook.
+This repository is my personal agent toolkit and handbook.
 
 It is where I keep the skills, agents, prompts, and reference material I actually want nearby when building with agents. The goal is not to be a giant catalog. The goal is to have a practical working kit: planning tools, documentation access, frontend guidance, browser automation, and a deep bench of specialized agents when the task gets narrow.
+
+**Now supports dual-target installation** -- install any asset into Codex or Hermes Agent (or both).
 
 ## What Lives Here
 
@@ -57,25 +59,46 @@ The Chasebuild collection is preserved under `archive/upstream/chasebuild-agent-
 
 What is valuable here is the perspective: practical activation criteria, explicit guardrails, and strong task framing. Even where the topics overlap with skills already in this repo, the wording and operating assumptions are worth studying.
 
-## Quick Start
+## Quick Start (Unified CLI)
 
-### Install a skill locally from this repo
+The `fieldkit` CLI installs any asset to Codex, Hermes, or both.
+
+```bash
+# List available assets
+node bin/fieldkit.js list skills
+node bin/fieldkit.js list agents --category languages-runtime
+
+# Install skills to Hermes
+node bin/fieldkit.js install skill --hermes --all
+
+# Install specific agents to Codex
+node bin/fieldkit.js install agent --codex debugger architect
+
+# Install everything to both systems
+node bin/fieldkit.js install all --both --all
+
+# Filter by category
+node bin/fieldkit.js install agent --hermes --category frontend-ui
+
+# Dry run
+node bin/fieldkit.js install skill --hermes --all --dry-run
+```
+
+### Target Systems
+
+| Flag | Target | Skills Path | Agents Path |
+|------|--------|-------------|-------------|
+| `--codex` | OpenAI Codex | `~/.codex/skills/` | `~/.codex/agents/` |
+| `--hermes` | Hermes Agent | `~/.hermes/skills/` | `~/.hermes/skills/codex-agents/` |
+| `--both` | Both | Both paths | Both paths |
+
+For Hermes, agents are auto-converted from TOML to SKILL.md format on install.
+
+### Legacy CLI (still works)
 
 ```bash
 node bin/codexskills.js --project . ./tmp-playground
-```
-
-That installs selected skills into `./tmp-playground/.codex/skills`.
-
-### Install agents into Codex
-
-```bash
 ./installer.sh reviewer worker_mini
-```
-
-Or copy everything:
-
-```bash
 ./installer.sh all
 ```
 
@@ -145,16 +168,35 @@ If something is here, it should earn its place by being useful in real agent-dri
 
 ```bash
 npm install
-node bin/codexskills.js --help
+node bin/fieldkit.js --help
+node bin/codexskills.js --help     # legacy
 ```
 
-There is no formal test suite yet. When changing the installer or packaged skills, use a temporary project directory and confirm the expected files land in `.codex/skills` or `~/.codex/agents`.
-
-For agent installer changes, use a disposable home directory and confirm the full inventory is preserved:
+When changing installers or skills, verify with a temp directory:
 
 ```bash
+# Test unified CLI
+node bin/fieldkit.js install skill --codex --project /tmp/test --all
+node bin/fieldkit.js install agent --hermes --all --dry-run
+
+# Test legacy installers
 HOME=/tmp/codex-field-kit-smoke ./installer.sh all
 find /tmp/codex-field-kit-smoke/.codex/agents -type f -name '*.toml' | wc -l
+```
+
+### Converting agents for Hermes
+
+Batch convert all 400 TOML agents to Hermes SKILL.md format:
+
+```bash
+python3 scripts/convert-all-agents.py
+# Output: skills-hermes/codex-agents/ with 400 SKILL.md directories
+```
+
+Or use the CLI:
+
+```bash
+node bin/fieldkit.js convert agents --target hermes
 ```
 
 ## Archive

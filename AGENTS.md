@@ -16,10 +16,15 @@ When making changes, treat the root toolkit as the product. Treat `archive/` as 
 - `skills/<skill-name>/SKILL.md` is the entrypoint for each skill.
 - `skills/<skill-name>/scripts/`, `references/`, and `assets/` are optional support files.
 - `agents/**/*.toml` contains Codex agent definitions grouped by domain.
-- `bin/codexskills.js` installs skills into project or user scope.
+- `skills-hermes/codex-agents/` contains converted agents as SKILL.md for Hermes.
+- `skills-hermes/codex-prompts/` contains wrapped prompts as SKILL.md for Hermes.
+- `bin/fieldkit.js` is the unified installer (skills, agents, prompts to Codex or Hermes).
+- `bin/codexskills.js` installs skills into project or user scope (legacy, Codex-only).
+- `scripts/convert-all-agents.py` batch-converts TOML agents to SKILL.md format.
 - `scripts/install-ccc.sh` bootstraps the CocoIndex Code CLI plus the local `ccc` skill.
 - `scripts/install-chase-skill-group.sh` installs a Chasebuild skill group from the archived local snapshot using `npx skills add`.
-- `installer.sh` installs agent TOML files into `~/.codex/agents`.
+- `installer.sh` installs agent TOML files into `~/.codex/agents` (legacy).
+- `lib/` contains shared modules: targets, registry, install-skills/agents/prompts, interactive, banner.
 - `archive/legacy-subagents/` preserves the previous category-based repo layout.
 - `archive/upstream/` preserves imported upstream snapshots.
 
@@ -46,10 +51,12 @@ When making changes, treat the root toolkit as the product. Treat `archive/` as 
 
 ## Verification
 
-- For installer changes, run `node bin/codexskills.js --help`.
+- For unified CLI changes, run `node bin/fieldkit.js --help` and test with `--dry-run`.
+- For legacy installer changes, run `node bin/codexskills.js --help`.
 - For `ccc` bootstrap changes, run `bash -n scripts/install-ccc.sh`.
 - For Chasebuild installer wrapper changes, run `bash -n scripts/install-chase-skill-group.sh`.
 - For agent installer changes, smoke test both `./installer.sh <agent-name>` and `HOME=/tmp/codex-field-kit-smoke ./installer.sh all` when practical.
+- For agent conversion changes, run `python3 scripts/convert-all-agents.py --dry-run` then check a sample output.
 - If you touch a skill with scripts or required environment variables, verify the instructions still match the files in that skill directory.
 
 ## Archive Policy
