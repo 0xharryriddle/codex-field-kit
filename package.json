@@ -1,10 +1,11 @@
 {
   "name": "codex-field-kit",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "private": true,
-  "description": "Personal Codex field kit with skills, agents, prompts, and local installer tooling.",
+  "description": "Universal agent field kit with skills, agents, and prompts for Codex and Hermes.",
   "license": "MIT",
   "bin": {
+    "fieldkit": "bin/fieldkit.js",
     "codexskills": "bin/codexskills.js"
   },
   "engines": {

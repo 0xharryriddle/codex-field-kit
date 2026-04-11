@@ -1,0 +1,1607 @@
+{
+  "version": "1.0.0",
+  "source": "codex-field-kit/agents",
+  "total": 400,
+  "skills": {
+    "academic-research-synthesizer": {
+      "path": "codex-agents/academic-research-synthesizer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/academic-research-synthesizer.toml"
+    },
+    "academic-researcher": {
+      "path": "codex-agents/academic-researcher",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/academic-researcher.toml"
+    },
+    "accessibility-expert": {
+      "path": "codex-agents/accessibility-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/accessibility-expert.toml"
+    },
+    "accessibility-specialist": {
+      "path": "codex-agents/accessibility-specialist",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/accessibility-specialist.toml"
+    },
+    "accessibility-wcag-auditor": {
+      "path": "codex-agents/accessibility-wcag-auditor",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/accessibility-wcag-auditor.toml"
+    },
+    "actix-expert": {
+      "path": "codex-agents/actix-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/actix-expert.toml"
+    },
+    "agent-expert": {
+      "path": "codex-agents/agent-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/agent-expert.toml"
+    },
+    "agents_config_block": {
+      "path": "codex-agents/agents_config_block",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/agents_config_block.toml"
+    },
+    "ai-engineer": {
+      "path": "codex-agents/ai-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/ai-engineer.toml"
+    },
+    "android-expert": {
+      "path": "codex-agents/android-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/mobile/android-expert.toml"
+    },
+    "angular-expert": {
+      "path": "codex-agents/angular-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/angular-expert.toml"
+    },
+    "angularjs-expert": {
+      "path": "codex-agents/angularjs-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/angularjs-expert.toml"
+    },
+    "ansible-expert": {
+      "path": "codex-agents/ansible-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/ansible-expert.toml"
+    },
+    "api-architect": {
+      "path": "codex-agents/api-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/api-architect.toml"
+    },
+    "api-documenter": {
+      "path": "codex-agents/api-documenter",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/api-documenter.toml"
+    },
+    "api-security-audit": {
+      "path": "codex-agents/api-security-audit",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/api-security-audit.toml"
+    },
+    "api_designer": {
+      "path": "codex-agents/api_designer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/api_designer.toml"
+    },
+    "arbitrage-bot": {
+      "path": "codex-agents/arbitrage-bot",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/blockchain-web3/arbitrage-bot.toml"
+    },
+    "architect": {
+      "path": "codex-agents/architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architect.toml"
+    },
+    "architect-review": {
+      "path": "codex-agents/architect-review",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/architect-review.toml"
+    },
+    "architecture-modernization-team": {
+      "path": "codex-agents/architecture-modernization-team",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/teams/architecture-modernization-team.toml"
+    },
+    "architecture-orchestration__api_designer": {
+      "path": "codex-agents/architecture-orchestration__api_designer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/api_designer.toml"
+    },
+    "architecture-orchestration__architect": {
+      "path": "codex-agents/architecture-orchestration__architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/architect.toml"
+    },
+    "arm-cortex-expert": {
+      "path": "codex-agents/arm-cortex-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/arm-cortex-expert.toml"
+    },
+    "aspnet-core-expert": {
+      "path": "codex-agents/aspnet-core-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/aspnet-core-expert.toml"
+    },
+    "astro-expert": {
+      "path": "codex-agents/astro-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/astro-expert.toml"
+    },
+    "audio-quality-controller": {
+      "path": "codex-agents/audio-quality-controller",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/testing-quality/audio-quality-controller.toml"
+    },
+    "auth0-expert": {
+      "path": "codex-agents/auth0-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/auth0-expert.toml"
+    },
+    "ava-expert": {
+      "path": "codex-agents/ava-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/ava-expert.toml"
+    },
+    "backend": {
+      "path": "codex-agents/backend",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend.toml"
+    },
+    "backend-architect": {
+      "path": "codex-agents/backend-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/backend-architect.toml"
+    },
+    "backend-delivery-team": {
+      "path": "codex-agents/backend-delivery-team",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/teams/backend-delivery-team.toml"
+    },
+    "backend-developer": {
+      "path": "codex-agents/backend-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/backend-developer.toml"
+    },
+    "backend-security-coder": {
+      "path": "codex-agents/backend-security-coder",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/backend-security-coder.toml"
+    },
+    "backend-typescript-architect": {
+      "path": "codex-agents/backend-typescript-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/backend-typescript-architect.toml"
+    },
+    "bash-expert": {
+      "path": "codex-agents/bash-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/bash-expert.toml"
+    },
+    "bash-pro": {
+      "path": "codex-agents/bash-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/bash-pro.toml"
+    },
+    "blockchain-developer": {
+      "path": "codex-agents/blockchain-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/blockchain-web3/blockchain-developer.toml"
+    },
+    "braintree-expert": {
+      "path": "codex-agents/braintree-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/braintree-expert.toml"
+    },
+    "bullmq-expert": {
+      "path": "codex-agents/bullmq-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/bullmq-expert.toml"
+    },
+    "bun-expert": {
+      "path": "codex-agents/bun-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/bun-expert.toml"
+    },
+    "business-analyst": {
+      "path": "codex-agents/business-analyst",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/business-analyst.toml"
+    },
+    "c-developer": {
+      "path": "codex-agents/c-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/c-developer.toml"
+    },
+    "c-expert": {
+      "path": "codex-agents/c-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/c-expert.toml"
+    },
+    "c-pro": {
+      "path": "codex-agents/c-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/c-pro.toml"
+    },
+    "c4-code": {
+      "path": "codex-agents/c4-code",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/c4-code.toml"
+    },
+    "c4-component": {
+      "path": "codex-agents/c4-component",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/c4-component.toml"
+    },
+    "c4-container": {
+      "path": "codex-agents/c4-container",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/c4-container.toml"
+    },
+    "c4-context": {
+      "path": "codex-agents/c4-context",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/c4-context.toml"
+    },
+    "cassandra-expert": {
+      "path": "codex-agents/cassandra-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/cassandra-expert.toml"
+    },
+    "celery-expert": {
+      "path": "codex-agents/celery-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/celery-expert.toml"
+    },
+    "circleci-expert": {
+      "path": "codex-agents/circleci-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/circleci-expert.toml"
+    },
+    "clojure-expert": {
+      "path": "codex-agents/clojure-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/clojure-expert.toml"
+    },
+    "cloud-architect": {
+      "path": "codex-agents/cloud-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/cloud-architect.toml"
+    },
+    "cockroachdb-expert": {
+      "path": "codex-agents/cockroachdb-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/cockroachdb-expert.toml"
+    },
+    "code-archaeologist": {
+      "path": "codex-agents/code-archaeologist",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/code-archaeologist.toml"
+    },
+    "code-reviewer": {
+      "path": "codex-agents/code-reviewer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/code-reviewer.toml"
+    },
+    "command-expert": {
+      "path": "codex-agents/command-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/command-expert.toml"
+    },
+    "comprehensive-researcher": {
+      "path": "codex-agents/comprehensive-researcher",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/comprehensive-researcher.toml"
+    },
+    "conductor-validator": {
+      "path": "codex-agents/conductor-validator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/conductor-validator.toml"
+    },
+    "connection-agent": {
+      "path": "codex-agents/connection-agent",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/connection-agent.toml"
+    },
+    "content-marketer": {
+      "path": "codex-agents/content-marketer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/content-marketer.toml"
+    },
+    "content_writer": {
+      "path": "codex-agents/content_writer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/content_writer.toml"
+    },
+    "context-manager": {
+      "path": "codex-agents/context-manager",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/context-manager.toml"
+    },
+    "convex-expert": {
+      "path": "codex-agents/convex-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/convex-expert.toml"
+    },
+    "cpp-engineer": {
+      "path": "codex-agents/cpp-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/cpp-engineer.toml"
+    },
+    "cpp-expert": {
+      "path": "codex-agents/cpp-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/cpp-expert.toml"
+    },
+    "cpp-pro": {
+      "path": "codex-agents/cpp-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/cpp-pro.toml"
+    },
+    "crypto-analyst": {
+      "path": "codex-agents/crypto-analyst",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/blockchain-web3/crypto-analyst.toml"
+    },
+    "crypto-risk-manager": {
+      "path": "codex-agents/crypto-risk-manager",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security/crypto-risk-manager.toml"
+    },
+    "crypto-trader": {
+      "path": "codex-agents/crypto-trader",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/blockchain-web3/crypto-trader.toml"
+    },
+    "csharp-expert": {
+      "path": "codex-agents/csharp-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/csharp-expert.toml"
+    },
+    "csharp-pro": {
+      "path": "codex-agents/csharp-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/csharp-pro.toml"
+    },
+    "css-expert": {
+      "path": "codex-agents/css-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/css-expert.toml"
+    },
+    "customer-support": {
+      "path": "codex-agents/customer-support",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/product-business/customer-support.toml"
+    },
+    "cypress-expert": {
+      "path": "codex-agents/cypress-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/testing-quality/cypress-expert.toml"
+    },
+    "dart-expert": {
+      "path": "codex-agents/dart-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/dart-expert.toml"
+    },
+    "data-analyst": {
+      "path": "codex-agents/data-analyst",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/data-analyst.toml"
+    },
+    "data-engineer": {
+      "path": "codex-agents/data-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/data-engineer.toml"
+    },
+    "data-ml-delivery-team": {
+      "path": "codex-agents/data-ml-delivery-team",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/teams/data-ml-delivery-team.toml"
+    },
+    "data-scientist": {
+      "path": "codex-agents/data-scientist",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/data-scientist.toml"
+    },
+    "data_pipeline": {
+      "path": "codex-agents/data_pipeline",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/data_pipeline.toml"
+    },
+    "database-admin": {
+      "path": "codex-agents/database-admin",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/database-admin.toml"
+    },
+    "database-architect": {
+      "path": "codex-agents/database-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/database-architect.toml"
+    },
+    "database-optimization": {
+      "path": "codex-agents/database-optimization",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/database-optimization.toml"
+    },
+    "database-optimizer": {
+      "path": "codex-agents/database-optimizer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/database-optimizer.toml"
+    },
+    "debugger": {
+      "path": "codex-agents/debugger",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/debugger.toml"
+    },
+    "defi-strategist": {
+      "path": "codex-agents/defi-strategist",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/blockchain-web3/defi-strategist.toml"
+    },
+    "deno-expert": {
+      "path": "codex-agents/deno-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/deno-expert.toml"
+    },
+    "deployment-engineer": {
+      "path": "codex-agents/deployment-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/deployment-engineer.toml"
+    },
+    "design-system-architect": {
+      "path": "codex-agents/design-system-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/design-system-architect.toml"
+    },
+    "devops": {
+      "path": "codex-agents/devops",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/devops.toml"
+    },
+    "devops-cicd-expert": {
+      "path": "codex-agents/devops-cicd-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/devops-cicd-expert.toml"
+    },
+    "devops-troubleshooter": {
+      "path": "codex-agents/devops-troubleshooter",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/devops-troubleshooter.toml"
+    },
+    "directus-developer": {
+      "path": "codex-agents/directus-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/directus-developer.toml"
+    },
+    "django-api-developer": {
+      "path": "codex-agents/django-api-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/django-api-developer.toml"
+    },
+    "django-backend-expert": {
+      "path": "codex-agents/django-backend-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/django-backend-expert.toml"
+    },
+    "django-expert": {
+      "path": "codex-agents/django-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/django-expert.toml"
+    },
+    "django-orm-expert": {
+      "path": "codex-agents/django-orm-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/django-orm-expert.toml"
+    },
+    "django-pro": {
+      "path": "codex-agents/django-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/django-pro.toml"
+    },
+    "docker-expert": {
+      "path": "codex-agents/docker-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/docker-expert.toml"
+    },
+    "docs-architect": {
+      "path": "codex-agents/docs-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/docs-architect.toml"
+    },
+    "documentation-content__content_writer": {
+      "path": "codex-agents/documentation-content__content_writer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/content_writer.toml"
+    },
+    "documentation-specialist": {
+      "path": "codex-agents/documentation-specialist",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/documentation-specialist.toml"
+    },
+    "documenter": {
+      "path": "codex-agents/documenter",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/documenter.toml"
+    },
+    "docusaurus-expert": {
+      "path": "codex-agents/docusaurus-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/docusaurus-expert.toml"
+    },
+    "dotnet-architect": {
+      "path": "codex-agents/dotnet-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/dotnet-architect.toml"
+    },
+    "drupal-developer": {
+      "path": "codex-agents/drupal-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/drupal-developer.toml"
+    },
+    "dx-optimizer": {
+      "path": "codex-agents/dx-optimizer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/dx-optimizer.toml"
+    },
+    "dynamodb-expert": {
+      "path": "codex-agents/dynamodb-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/dynamodb-expert.toml"
+    },
+    "elasticsearch-expert": {
+      "path": "codex-agents/elasticsearch-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/elasticsearch-expert.toml"
+    },
+    "electron-expert": {
+      "path": "codex-agents/electron-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/electron-expert.toml"
+    },
+    "elixir-expert": {
+      "path": "codex-agents/elixir-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/elixir-expert.toml"
+    },
+    "elixir-pro": {
+      "path": "codex-agents/elixir-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/elixir-pro.toml"
+    },
+    "elk-expert": {
+      "path": "codex-agents/elk-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/elk-expert.toml"
+    },
+    "episode-orchestrator": {
+      "path": "codex-agents/episode-orchestrator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/episode-orchestrator.toml"
+    },
+    "erlang-expert": {
+      "path": "codex-agents/erlang-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/erlang-expert.toml"
+    },
+    "error-detective": {
+      "path": "codex-agents/error-detective",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/error-detective.toml"
+    },
+    "event-sourcing-architect": {
+      "path": "codex-agents/event-sourcing-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/event-sourcing-architect.toml"
+    },
+    "expo-expert": {
+      "path": "codex-agents/expo-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/mobile/expo-expert.toml"
+    },
+    "express-expert": {
+      "path": "codex-agents/express-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/express-expert.toml"
+    },
+    "fastapi-expert": {
+      "path": "codex-agents/fastapi-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/fastapi-expert.toml"
+    },
+    "fastapi-pro": {
+      "path": "codex-agents/fastapi-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/fastapi-pro.toml"
+    },
+    "fastify-expert": {
+      "path": "codex-agents/fastify-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/fastify-expert.toml"
+    },
+    "fiber-expert": {
+      "path": "codex-agents/fiber-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/fiber-expert.toml"
+    },
+    "firmware-analyst": {
+      "path": "codex-agents/firmware-analyst",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/firmware-analyst.toml"
+    },
+    "flask-expert": {
+      "path": "codex-agents/flask-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/flask-expert.toml"
+    },
+    "flutter-expert": {
+      "path": "codex-agents/flutter-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/mobile/flutter-expert.toml"
+    },
+    "flyway-expert": {
+      "path": "codex-agents/flyway-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/flyway-expert.toml"
+    },
+    "frontend": {
+      "path": "codex-agents/frontend",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend.toml"
+    },
+    "frontend-developer": {
+      "path": "codex-agents/frontend-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/frontend-developer.toml"
+    },
+    "frontend-security-coder": {
+      "path": "codex-agents/frontend-security-coder",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/frontend-security-coder.toml"
+    },
+    "game-developer": {
+      "path": "codex-agents/game-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/game-developer.toml"
+    },
+    "general__debugger": {
+      "path": "codex-agents/general__debugger",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/debugger.toml"
+    },
+    "gin-expert": {
+      "path": "codex-agents/gin-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/gin-expert.toml"
+    },
+    "git_ops": {
+      "path": "codex-agents/git_ops",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/git_ops.toml"
+    },
+    "github-actions-expert": {
+      "path": "codex-agents/github-actions-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/github-actions-expert.toml"
+    },
+    "gitlab-ci-expert": {
+      "path": "codex-agents/gitlab-ci-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/gitlab-ci-expert.toml"
+    },
+    "go-expert": {
+      "path": "codex-agents/go-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/go-expert.toml"
+    },
+    "golang-expert": {
+      "path": "codex-agents/golang-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/golang-expert.toml"
+    },
+    "golang-pro": {
+      "path": "codex-agents/golang-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/golang-pro.toml"
+    },
+    "grafana-expert": {
+      "path": "codex-agents/grafana-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/grafana-expert.toml"
+    },
+    "graphql-architect": {
+      "path": "codex-agents/graphql-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/graphql-architect.toml"
+    },
+    "graphql-expert": {
+      "path": "codex-agents/graphql-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/graphql-expert.toml"
+    },
+    "grpc-expert": {
+      "path": "codex-agents/grpc-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/grpc-expert.toml"
+    },
+    "hackathon-ai-strategist": {
+      "path": "codex-agents/hackathon-ai-strategist",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/hackathon-ai-strategist.toml"
+    },
+    "haskell-expert": {
+      "path": "codex-agents/haskell-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/haskell-expert.toml"
+    },
+    "haskell-pro": {
+      "path": "codex-agents/haskell-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/haskell-pro.toml"
+    },
+    "hr-pro": {
+      "path": "codex-agents/hr-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security/hr-pro.toml"
+    },
+    "html-expert": {
+      "path": "codex-agents/html-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/html-expert.toml"
+    },
+    "hybrid-cloud-architect": {
+      "path": "codex-agents/hybrid-cloud-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/hybrid-cloud-architect.toml"
+    },
+    "hyperledger-fabric-developer": {
+      "path": "codex-agents/hyperledger-fabric-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/blockchain-web3/hyperledger-fabric-developer.toml"
+    },
+    "incident-responder": {
+      "path": "codex-agents/incident-responder",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/incident-responder.toml"
+    },
+    "ios-developer": {
+      "path": "codex-agents/ios-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/mobile/ios-developer.toml"
+    },
+    "ios-expert": {
+      "path": "codex-agents/ios-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/mobile/ios-expert.toml"
+    },
+    "jasmine-expert": {
+      "path": "codex-agents/jasmine-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/testing-quality/jasmine-expert.toml"
+    },
+    "java-developer": {
+      "path": "codex-agents/java-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/java-developer.toml"
+    },
+    "java-expert": {
+      "path": "codex-agents/java-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/java-expert.toml"
+    },
+    "java-pro": {
+      "path": "codex-agents/java-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/java-pro.toml"
+    },
+    "javascript-developer": {
+      "path": "codex-agents/javascript-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/javascript-developer.toml"
+    },
+    "javascript-expert": {
+      "path": "codex-agents/javascript-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/javascript-expert.toml"
+    },
+    "javascript-pro": {
+      "path": "codex-agents/javascript-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/javascript-pro.toml"
+    },
+    "jenkins-expert": {
+      "path": "codex-agents/jenkins-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/jenkins-expert.toml"
+    },
+    "jest-expert": {
+      "path": "codex-agents/jest-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/testing-quality/jest-expert.toml"
+    },
+    "jquery-expert": {
+      "path": "codex-agents/jquery-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/jquery-expert.toml"
+    },
+    "julia-pro": {
+      "path": "codex-agents/julia-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/julia-pro.toml"
+    },
+    "jwt-expert": {
+      "path": "codex-agents/jwt-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security/jwt-expert.toml"
+    },
+    "kafka-expert": {
+      "path": "codex-agents/kafka-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/kafka-expert.toml"
+    },
+    "keycloak-expert": {
+      "path": "codex-agents/keycloak-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security/keycloak-expert.toml"
+    },
+    "knex-expert": {
+      "path": "codex-agents/knex-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/knex-expert.toml"
+    },
+    "kotlin-expert": {
+      "path": "codex-agents/kotlin-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/kotlin-expert.toml"
+    },
+    "kubernetes-architect": {
+      "path": "codex-agents/kubernetes-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/kubernetes-architect.toml"
+    },
+    "kubernetes-expert": {
+      "path": "codex-agents/kubernetes-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/kubernetes-expert.toml"
+    },
+    "langchain-expert": {
+      "path": "codex-agents/langchain-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/langchain-expert.toml"
+    },
+    "laravel-backend-expert": {
+      "path": "codex-agents/laravel-backend-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/laravel-backend-expert.toml"
+    },
+    "laravel-eloquent-expert": {
+      "path": "codex-agents/laravel-eloquent-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/laravel-eloquent-expert.toml"
+    },
+    "laravel-expert": {
+      "path": "codex-agents/laravel-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/laravel-expert.toml"
+    },
+    "laravel-vue-developer": {
+      "path": "codex-agents/laravel-vue-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/laravel-vue-developer.toml"
+    },
+    "legacy-modernizer": {
+      "path": "codex-agents/legacy-modernizer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/legacy-modernizer.toml"
+    },
+    "legal-advisor": {
+      "path": "codex-agents/legal-advisor",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security/legal-advisor.toml"
+    },
+    "liquibase-expert": {
+      "path": "codex-agents/liquibase-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/liquibase-expert.toml"
+    },
+    "llms-maintainer": {
+      "path": "codex-agents/llms-maintainer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/llms-maintainer.toml"
+    },
+    "loki-expert": {
+      "path": "codex-agents/loki-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/loki-expert.toml"
+    },
+    "lua-expert": {
+      "path": "codex-agents/lua-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/lua-expert.toml"
+    },
+    "malware-analyst": {
+      "path": "codex-agents/malware-analyst",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/malware-analyst.toml"
+    },
+    "mariadb-expert": {
+      "path": "codex-agents/mariadb-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/mariadb-expert.toml"
+    },
+    "markdown-syntax-formatter": {
+      "path": "codex-agents/markdown-syntax-formatter",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/markdown-syntax-formatter.toml"
+    },
+    "market-research-analyst": {
+      "path": "codex-agents/market-research-analyst",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/market-research-analyst.toml"
+    },
+    "mcp-deployment-orchestrator": {
+      "path": "codex-agents/mcp-deployment-orchestrator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/mcp-deployment-orchestrator.toml"
+    },
+    "mcp-expert": {
+      "path": "codex-agents/mcp-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/mcp-expert.toml"
+    },
+    "mcp-registry-navigator": {
+      "path": "codex-agents/mcp-registry-navigator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/mcp-registry-navigator.toml"
+    },
+    "mcp-security-auditor": {
+      "path": "codex-agents/mcp-security-auditor",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security/mcp-security-auditor.toml"
+    },
+    "mcp-server-architect": {
+      "path": "codex-agents/mcp-server-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/mcp-server-architect.toml"
+    },
+    "mcp-testing-engineer": {
+      "path": "codex-agents/mcp-testing-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/mcp-testing-engineer.toml"
+    },
+    "mermaid-expert": {
+      "path": "codex-agents/mermaid-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/mermaid-expert.toml"
+    },
+    "metadata-agent": {
+      "path": "codex-agents/metadata-agent",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/metadata-agent.toml"
+    },
+    "migrator": {
+      "path": "codex-agents/migrator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/migrator.toml"
+    },
+    "minecraft-bukkit-pro": {
+      "path": "codex-agents/minecraft-bukkit-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/minecraft-bukkit-pro.toml"
+    },
+    "ml-data-expert": {
+      "path": "codex-agents/ml-data-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/ml-data-expert.toml"
+    },
+    "ml-engineer": {
+      "path": "codex-agents/ml-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/ml-engineer.toml"
+    },
+    "mlops-engineer": {
+      "path": "codex-agents/mlops-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/mlops-engineer.toml"
+    },
+    "mobile": {
+      "path": "codex-agents/mobile",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/mobile.toml"
+    },
+    "mobile-developer": {
+      "path": "codex-agents/mobile-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/mobile-developer.toml"
+    },
+    "mobile-security-coder": {
+      "path": "codex-agents/mobile-security-coder",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/mobile-security-coder.toml"
+    },
+    "moc-agent": {
+      "path": "codex-agents/moc-agent",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/moc-agent.toml"
+    },
+    "mocha-expert": {
+      "path": "codex-agents/mocha-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/testing-quality/mocha-expert.toml"
+    },
+    "mongodb-expert": {
+      "path": "codex-agents/mongodb-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/mongodb-expert.toml"
+    },
+    "mongoose-expert": {
+      "path": "codex-agents/mongoose-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/mongoose-expert.toml"
+    },
+    "monorepo-architect": {
+      "path": "codex-agents/monorepo-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/monorepo-architect.toml"
+    },
+    "mqtt-expert": {
+      "path": "codex-agents/mqtt-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/mqtt-expert.toml"
+    },
+    "mssql-expert": {
+      "path": "codex-agents/mssql-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/mssql-expert.toml"
+    },
+    "mysql-expert": {
+      "path": "codex-agents/mysql-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/mysql-expert.toml"
+    },
+    "nats-expert": {
+      "path": "codex-agents/nats-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/nats-expert.toml"
+    },
+    "neo4j-expert": {
+      "path": "codex-agents/neo4j-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/neo4j-expert.toml"
+    },
+    "nestjs-expert": {
+      "path": "codex-agents/nestjs-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/nestjs-expert.toml"
+    },
+    "network-engineer": {
+      "path": "codex-agents/network-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/network-engineer.toml"
+    },
+    "nextjs-app-router-developer": {
+      "path": "codex-agents/nextjs-app-router-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/nextjs-app-router-developer.toml"
+    },
+    "nextjs-expert": {
+      "path": "codex-agents/nextjs-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/nextjs-expert.toml"
+    },
+    "nodejs-expert": {
+      "path": "codex-agents/nodejs-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/nodejs-expert.toml"
+    },
+    "numpy-expert": {
+      "path": "codex-agents/numpy-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/numpy-expert.toml"
+    },
+    "oauth-oidc-expert": {
+      "path": "codex-agents/oauth-oidc-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security/oauth-oidc-expert.toml"
+    },
+    "observability-engineer": {
+      "path": "codex-agents/observability-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/observability-engineer.toml"
+    },
+    "ocaml-expert": {
+      "path": "codex-agents/ocaml-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/ocaml-expert.toml"
+    },
+    "ocr-grammar-fixer": {
+      "path": "codex-agents/ocr-grammar-fixer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/ocr-grammar-fixer.toml"
+    },
+    "ocr-quality-assurance": {
+      "path": "codex-agents/ocr-quality-assurance",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/testing-quality/ocr-quality-assurance.toml"
+    },
+    "openai-api-expert": {
+      "path": "codex-agents/openai-api-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/openai-api-expert.toml"
+    },
+    "openapi-expert": {
+      "path": "codex-agents/openapi-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/openapi-expert.toml"
+    },
+    "opensearch-expert": {
+      "path": "codex-agents/opensearch-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/opensearch-expert.toml"
+    },
+    "opentelemetry-expert": {
+      "path": "codex-agents/opentelemetry-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/opentelemetry-expert.toml"
+    },
+    "owasp-top10-expert": {
+      "path": "codex-agents/owasp-top10-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/owasp-top10-expert.toml"
+    },
+    "pandas-expert": {
+      "path": "codex-agents/pandas-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/pandas-expert.toml"
+    },
+    "payment-integration": {
+      "path": "codex-agents/payment-integration",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/payment-integration.toml"
+    },
+    "performance": {
+      "path": "codex-agents/performance",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/performance.toml"
+    },
+    "performance-engineer": {
+      "path": "codex-agents/performance-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/performance-engineer.toml"
+    },
+    "performance-expert": {
+      "path": "codex-agents/performance-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/performance-expert.toml"
+    },
+    "performance-optimizer": {
+      "path": "codex-agents/performance-optimizer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/performance-optimizer.toml"
+    },
+    "perl-expert": {
+      "path": "codex-agents/perl-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/perl-expert.toml"
+    },
+    "phoenix-expert": {
+      "path": "codex-agents/phoenix-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/phoenix-expert.toml"
+    },
+    "php-developer": {
+      "path": "codex-agents/php-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/php-developer.toml"
+    },
+    "php-expert": {
+      "path": "codex-agents/php-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/php-expert.toml"
+    },
+    "php-pro": {
+      "path": "codex-agents/php-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/php-pro.toml"
+    },
+    "plan-checker": {
+      "path": "codex-agents/plan-checker",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/plan-checker.toml"
+    },
+    "playwright-expert": {
+      "path": "codex-agents/playwright-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/playwright-expert.toml"
+    },
+    "podcast-content-analyzer": {
+      "path": "codex-agents/podcast-content-analyzer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/podcast-content-analyzer.toml"
+    },
+    "podcast-metadata-specialist": {
+      "path": "codex-agents/podcast-metadata-specialist",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/podcast-metadata-specialist.toml"
+    },
+    "podcast-transcriber": {
+      "path": "codex-agents/podcast-transcriber",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/podcast-transcriber.toml"
+    },
+    "podcast-trend-scout": {
+      "path": "codex-agents/podcast-trend-scout",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/podcast-trend-scout.toml"
+    },
+    "posix-shell-pro": {
+      "path": "codex-agents/posix-shell-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/posix-shell-pro.toml"
+    },
+    "postgres-expert": {
+      "path": "codex-agents/postgres-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/postgres-expert.toml"
+    },
+    "pr-audit-team": {
+      "path": "codex-agents/pr-audit-team",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/teams/pr-audit-team.toml"
+    },
+    "prisma-expert": {
+      "path": "codex-agents/prisma-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/prisma-expert.toml"
+    },
+    "project-analyst": {
+      "path": "codex-agents/project-analyst",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/project-analyst.toml"
+    },
+    "project-supervisor-orchestrator": {
+      "path": "codex-agents/project-supervisor-orchestrator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/project-supervisor-orchestrator.toml"
+    },
+    "prometheus-expert": {
+      "path": "codex-agents/prometheus-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/prometheus-expert.toml"
+    },
+    "prompt-engineer": {
+      "path": "codex-agents/prompt-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/prompt-engineer.toml"
+    },
+    "pulumi-expert": {
+      "path": "codex-agents/pulumi-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/pulumi-expert.toml"
+    },
+    "puppeteer-expert": {
+      "path": "codex-agents/puppeteer-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/puppeteer-expert.toml"
+    },
+    "pydantic-ai-agents-expert": {
+      "path": "codex-agents/pydantic-ai-agents-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/pydantic-ai-agents-expert.toml"
+    },
+    "pydantic-evals-expert": {
+      "path": "codex-agents/pydantic-evals-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/pydantic-evals-expert.toml"
+    },
+    "python-backend-engineer": {
+      "path": "codex-agents/python-backend-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/python-backend-engineer.toml"
+    },
+    "python-expert": {
+      "path": "codex-agents/python-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/python-expert.toml"
+    },
+    "python-pro": {
+      "path": "codex-agents/python-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/python-pro.toml"
+    },
+    "pytorch-expert": {
+      "path": "codex-agents/pytorch-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/pytorch-expert.toml"
+    },
+    "quant-analyst": {
+      "path": "codex-agents/quant-analyst",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/quant-analyst.toml"
+    },
+    "query-clarifier": {
+      "path": "codex-agents/query-clarifier",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/query-clarifier.toml"
+    },
+    "rabbitmq-expert": {
+      "path": "codex-agents/rabbitmq-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/rabbitmq-expert.toml"
+    },
+    "rails-activerecord-expert": {
+      "path": "codex-agents/rails-activerecord-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/rails-activerecord-expert.toml"
+    },
+    "rails-api-developer": {
+      "path": "codex-agents/rails-api-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/rails-api-developer.toml"
+    },
+    "rails-backend-expert": {
+      "path": "codex-agents/rails-backend-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/rails-backend-expert.toml"
+    },
+    "rails-expert": {
+      "path": "codex-agents/rails-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/rails-expert.toml"
+    },
+    "react-component-architect": {
+      "path": "codex-agents/react-component-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/react-component-architect.toml"
+    },
+    "react-expert": {
+      "path": "codex-agents/react-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/react-expert.toml"
+    },
+    "react-native-expert": {
+      "path": "codex-agents/react-native-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/react-native-expert.toml"
+    },
+    "react-nextjs-expert": {
+      "path": "codex-agents/react-nextjs-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/react-nextjs-expert.toml"
+    },
+    "react-performance-optimization": {
+      "path": "codex-agents/react-performance-optimization",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/react-performance-optimization.toml"
+    },
+    "redis-expert": {
+      "path": "codex-agents/redis-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/redis-expert.toml"
+    },
+    "refactorer": {
+      "path": "codex-agents/refactorer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/refactorer.toml"
+    },
+    "reference-builder": {
+      "path": "codex-agents/reference-builder",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/reference-builder.toml"
+    },
+    "remix-expert": {
+      "path": "codex-agents/remix-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/remix-expert.toml"
+    },
+    "report-generator": {
+      "path": "codex-agents/report-generator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/report-generator.toml"
+    },
+    "research-brief-generator": {
+      "path": "codex-agents/research-brief-generator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/research-brief-generator.toml"
+    },
+    "research-coordinator": {
+      "path": "codex-agents/research-coordinator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/research-coordinator.toml"
+    },
+    "research-orchestrator": {
+      "path": "codex-agents/research-orchestrator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/research-orchestrator.toml"
+    },
+    "research-synthesizer": {
+      "path": "codex-agents/research-synthesizer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/research-synthesizer.toml"
+    },
+    "rest-expert": {
+      "path": "codex-agents/rest-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/rest-expert.toml"
+    },
+    "reverse-engineer": {
+      "path": "codex-agents/reverse-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/reverse-engineer.toml"
+    },
+    "review-agent": {
+      "path": "codex-agents/review-agent",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/testing-quality/review-agent.toml"
+    },
+    "reviewer": {
+      "path": "codex-agents/reviewer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/reviewer.toml"
+    },
+    "risk-manager": {
+      "path": "codex-agents/risk-manager",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security/risk-manager.toml"
+    },
+    "rollup-expert": {
+      "path": "codex-agents/rollup-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/rollup-expert.toml"
+    },
+    "root__data_pipeline": {
+      "path": "codex-agents/root__data_pipeline",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data_pipeline.toml"
+    },
+    "root__devops": {
+      "path": "codex-agents/root__devops",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops.toml"
+    },
+    "root__documenter": {
+      "path": "codex-agents/root__documenter",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documenter.toml"
+    },
+    "root__migrator": {
+      "path": "codex-agents/root__migrator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/migrator.toml"
+    },
+    "root__refactorer": {
+      "path": "codex-agents/root__refactorer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/refactorer.toml"
+    },
+    "root__scout": {
+      "path": "codex-agents/root__scout",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/scout.toml"
+    },
+    "root__smart_contract": {
+      "path": "codex-agents/root__smart_contract",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/smart_contract.toml"
+    },
+    "ruby-expert": {
+      "path": "codex-agents/ruby-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/ruby-expert.toml"
+    },
+    "ruby-pro": {
+      "path": "codex-agents/ruby-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/ruby-pro.toml"
+    },
+    "rust-expert": {
+      "path": "codex-agents/rust-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/rust-expert.toml"
+    },
+    "rust-pro": {
+      "path": "codex-agents/rust-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/rust-pro.toml"
+    },
+    "sales-automator": {
+      "path": "codex-agents/sales-automator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/product-business/sales-automator.toml"
+    },
+    "scala-expert": {
+      "path": "codex-agents/scala-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/scala-expert.toml"
+    },
+    "scala-pro": {
+      "path": "codex-agents/scala-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/scala-pro.toml"
+    },
+    "scikit-learn-expert": {
+      "path": "codex-agents/scikit-learn-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/scikit-learn-expert.toml"
+    },
+    "scout": {
+      "path": "codex-agents/scout",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/scout.toml"
+    },
+    "search-specialist": {
+      "path": "codex-agents/search-specialist",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/search-specialist.toml"
+    },
+    "security": {
+      "path": "codex-agents/security",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security.toml"
+    },
+    "security-assurance-team": {
+      "path": "codex-agents/security-assurance-team",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/teams/security-assurance-team.toml"
+    },
+    "security-auditor": {
+      "path": "codex-agents/security-auditor",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security/security-auditor.toml"
+    },
+    "security-expert": {
+      "path": "codex-agents/security-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security/security-expert.toml"
+    },
+    "selenium-expert": {
+      "path": "codex-agents/selenium-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/selenium-expert.toml"
+    },
+    "senior-code-reviewer": {
+      "path": "codex-agents/senior-code-reviewer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/senior-code-reviewer.toml"
+    },
+    "seo-authority-builder": {
+      "path": "codex-agents/seo-authority-builder",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/seo-authority-builder.toml"
+    },
+    "seo-cannibalization-detector": {
+      "path": "codex-agents/seo-cannibalization-detector",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/seo-cannibalization-detector.toml"
+    },
+    "seo-content-auditor": {
+      "path": "codex-agents/seo-content-auditor",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/seo-content-auditor.toml"
+    },
+    "seo-content-planner": {
+      "path": "codex-agents/seo-content-planner",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/seo-content-planner.toml"
+    },
+    "seo-content-refresher": {
+      "path": "codex-agents/seo-content-refresher",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/seo-content-refresher.toml"
+    },
+    "seo-content-writer": {
+      "path": "codex-agents/seo-content-writer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/seo-content-writer.toml"
+    },
+    "seo-keyword-strategist": {
+      "path": "codex-agents/seo-keyword-strategist",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/seo-keyword-strategist.toml"
+    },
+    "seo-meta-optimizer": {
+      "path": "codex-agents/seo-meta-optimizer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/seo-meta-optimizer.toml"
+    },
+    "seo-podcast-optimizer": {
+      "path": "codex-agents/seo-podcast-optimizer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/seo-podcast-optimizer.toml"
+    },
+    "seo-snippet-hunter": {
+      "path": "codex-agents/seo-snippet-hunter",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/seo-snippet-hunter.toml"
+    },
+    "seo-structure-architect": {
+      "path": "codex-agents/seo-structure-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/seo-structure-architect.toml"
+    },
+    "sequelize-expert": {
+      "path": "codex-agents/sequelize-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/sequelize-expert.toml"
+    },
+    "service-mesh-expert": {
+      "path": "codex-agents/service-mesh-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/service-mesh-expert.toml"
+    },
+    "sidekiq-expert": {
+      "path": "codex-agents/sidekiq-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/sidekiq-expert.toml"
+    },
+    "smart_contract": {
+      "path": "codex-agents/smart_contract",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/blockchain-web3/smart_contract.toml"
+    },
+    "sns-expert": {
+      "path": "codex-agents/sns-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/sns-expert.toml"
+    },
+    "social-media-clip-creator": {
+      "path": "codex-agents/social-media-clip-creator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/social-media-clip-creator.toml"
+    },
+    "social-media-copywriter": {
+      "path": "codex-agents/social-media-copywriter",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/social-media-copywriter.toml"
+    },
+    "solidjs-expert": {
+      "path": "codex-agents/solidjs-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/solidjs-expert.toml"
+    },
+    "sparky": {
+      "path": "codex-agents/sparky",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/sparky.toml"
+    },
+    "spring-boot-expert": {
+      "path": "codex-agents/spring-boot-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/spring-boot-expert.toml"
+    },
+    "sql-expert": {
+      "path": "codex-agents/sql-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/sql-expert.toml"
+    },
+    "sql-pro": {
+      "path": "codex-agents/sql-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/sql-pro.toml"
+    },
+    "sqlite-expert": {
+      "path": "codex-agents/sqlite-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/sqlite-expert.toml"
+    },
+    "sqs-expert": {
+      "path": "codex-agents/sqs-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/sqs-expert.toml"
+    },
+    "startup-analyst": {
+      "path": "codex-agents/startup-analyst",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/product-business/startup-analyst.toml"
+    },
+    "stripe-expert": {
+      "path": "codex-agents/stripe-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/stripe-expert.toml"
+    },
+    "svelte-expert": {
+      "path": "codex-agents/svelte-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/svelte-expert.toml"
+    },
+    "swift-expert": {
+      "path": "codex-agents/swift-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/swift-expert.toml"
+    },
+    "swiftui-expert": {
+      "path": "codex-agents/swiftui-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/swiftui-expert.toml"
+    },
+    "tag-agent": {
+      "path": "codex-agents/tag-agent",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/tag-agent.toml"
+    },
+    "tailwind-css-expert": {
+      "path": "codex-agents/tailwind-css-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/tailwind-css-expert.toml"
+    },
+    "tailwind-expert": {
+      "path": "codex-agents/tailwind-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/tailwind-expert.toml"
+    },
+    "task-decomposition-expert": {
+      "path": "codex-agents/task-decomposition-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/task-decomposition-expert.toml"
+    },
+    "tauri-expert": {
+      "path": "codex-agents/tauri-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/tauri-expert.toml"
+    },
+    "tdd-orchestrator": {
+      "path": "codex-agents/tdd-orchestrator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/tdd-orchestrator.toml"
+    },
+    "tdd_test_writer": {
+      "path": "codex-agents/tdd_test_writer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/testing-quality/tdd_test_writer.toml"
+    },
+    "team-configurator": {
+      "path": "codex-agents/team-configurator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/team-configurator.toml"
+    },
+    "team-debugger": {
+      "path": "codex-agents/team-debugger",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/team-debugger.toml"
+    },
+    "team-implementer": {
+      "path": "codex-agents/team-implementer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/team-implementer.toml"
+    },
+    "team-lead": {
+      "path": "codex-agents/team-lead",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/team-lead.toml"
+    },
+    "team-reviewer": {
+      "path": "codex-agents/team-reviewer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/team-reviewer.toml"
+    },
+    "tech-lead-orchestrator": {
+      "path": "codex-agents/tech-lead-orchestrator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/tech-lead-orchestrator.toml"
+    },
+    "technical-researcher": {
+      "path": "codex-agents/technical-researcher",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/technical-researcher.toml"
+    },
+    "temporal-python-pro": {
+      "path": "codex-agents/temporal-python-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/backend-api/temporal-python-pro.toml"
+    },
+    "tensorflow-expert": {
+      "path": "codex-agents/tensorflow-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/tensorflow-expert.toml"
+    },
+    "terraform-expert": {
+      "path": "codex-agents/terraform-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/terraform-expert.toml"
+    },
+    "terraform-specialist": {
+      "path": "codex-agents/terraform-specialist",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/devops-cloud-infra/terraform-specialist.toml"
+    },
+    "test-automator": {
+      "path": "codex-agents/test-automator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/testing-quality/test-automator.toml"
+    },
+    "testcafe-expert": {
+      "path": "codex-agents/testcafe-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/testcafe-expert.toml"
+    },
+    "tester": {
+      "path": "codex-agents/tester",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/tester.toml"
+    },
+    "testing-expert": {
+      "path": "codex-agents/testing-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/testing-expert.toml"
+    },
+    "text-comparison-validator": {
+      "path": "codex-agents/text-comparison-validator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/text-comparison-validator.toml"
+    },
+    "threat-modeling-expert": {
+      "path": "codex-agents/threat-modeling-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/security/threat-modeling-expert.toml"
+    },
+    "timestamp-precision-specialist": {
+      "path": "codex-agents/timestamp-precision-specialist",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/timestamp-precision-specialist.toml"
+    },
+    "trpc-expert": {
+      "path": "codex-agents/trpc-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/trpc-expert.toml"
+    },
+    "tutorial-engineer": {
+      "path": "codex-agents/tutorial-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/documentation-content/tutorial-engineer.toml"
+    },
+    "twitter-ai-influencer-manager": {
+      "path": "codex-agents/twitter-ai-influencer-manager",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/data-ai-ml/twitter-ai-influencer-manager.toml"
+    },
+    "typeorm-expert": {
+      "path": "codex-agents/typeorm-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/typeorm-expert.toml"
+    },
+    "typescript-expert": {
+      "path": "codex-agents/typescript-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/typescript-expert.toml"
+    },
+    "typescript-pro": {
+      "path": "codex-agents/typescript-pro",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/typescript-pro.toml"
+    },
+    "ui-delivery-team": {
+      "path": "codex-agents/ui-delivery-team",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/teams/ui-delivery-team.toml"
+    },
+    "ui-designer": {
+      "path": "codex-agents/ui-designer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/ui-designer.toml"
+    },
+    "ui-engineer": {
+      "path": "codex-agents/ui-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/ui-engineer.toml"
+    },
+    "ui-ux-designer": {
+      "path": "codex-agents/ui-ux-designer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/ui-ux-designer.toml"
+    },
+    "ui-visual-validator": {
+      "path": "codex-agents/ui-visual-validator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/ui-visual-validator.toml"
+    },
+    "unity-developer": {
+      "path": "codex-agents/unity-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/unity-developer.toml"
+    },
+    "url-context-validator": {
+      "path": "codex-agents/url-context-validator",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/url-context-validator.toml"
+    },
+    "url-link-extractor": {
+      "path": "codex-agents/url-link-extractor",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/url-link-extractor.toml"
+    },
+    "vector-database-engineer": {
+      "path": "codex-agents/vector-database-engineer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/vector-database-engineer.toml"
+    },
+    "vector-db-expert": {
+      "path": "codex-agents/vector-db-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/databases-storage/vector-db-expert.toml"
+    },
+    "visual-analysis-ocr": {
+      "path": "codex-agents/visual-analysis-ocr",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/visual-analysis-ocr.toml"
+    },
+    "vitest-expert": {
+      "path": "codex-agents/vitest-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/vitest-expert.toml"
+    },
+    "vue-component-architect": {
+      "path": "codex-agents/vue-component-architect",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/architecture-orchestration/vue-component-architect.toml"
+    },
+    "vue-expert": {
+      "path": "codex-agents/vue-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/vue-expert.toml"
+    },
+    "vue-nuxt-expert": {
+      "path": "codex-agents/vue-nuxt-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/vue-nuxt-expert.toml"
+    },
+    "vue-state-manager": {
+      "path": "codex-agents/vue-state-manager",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/frontend-ui/vue-state-manager.toml"
+    },
+    "web-scraping-expert": {
+      "path": "codex-agents/web-scraping-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/languages-runtime/web-scraping-expert.toml"
+    },
+    "webpack-expert": {
+      "path": "codex-agents/webpack-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/webpack-expert.toml"
+    },
+    "websocket-expert": {
+      "path": "codex-agents/websocket-expert",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/websocket-expert.toml"
+    },
+    "wordpress-developer": {
+      "path": "codex-agents/wordpress-developer",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/general/wordpress-developer.toml"
+    },
+    "worker_high": {
+      "path": "codex-agents/worker_high",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/worker_high.toml"
+    },
+    "worker_medium": {
+      "path": "codex-agents/worker_medium",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/worker_medium.toml"
+    },
+    "worker_mini": {
+      "path": "codex-agents/worker_mini",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/worker_mini.toml"
+    },
+    "worker_spark_high": {
+      "path": "codex-agents/worker_spark_high",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/worker_spark_high.toml"
+    },
+    "worker_spark_xhigh": {
+      "path": "codex-agents/worker_spark_xhigh",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/worker_spark_xhigh.toml"
+    },
+    "worker_xhigh": {
+      "path": "codex-agents/worker_xhigh",
+      "source": "/home/harry-riddle/dev/github.com/0xharryriddle/codex-field-kit/agents/worker_xhigh.toml"
+    }
+  }
+}
